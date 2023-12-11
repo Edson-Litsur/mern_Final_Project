@@ -1,7 +1,7 @@
 import User from '../models/user.model.js'
+import { errorHandler } from '../utils/error.js';
 import bcryptjs from 'bcryptjs';
- import { errorHandler } from '../utilis/errors.js';
-// import  Jwt  from 'jsonwebtoken'; 
+import  Jwt  from 'jsonwebtoken'; 
 
 
 export const signup = async (req, res, next) => {
@@ -20,7 +20,7 @@ try{
  } 
 }; 
 
-// Sign in controller
+// Sign in  function
 
 export const signin = async (req, res, next) => {
     const { email, password } = req.body;
