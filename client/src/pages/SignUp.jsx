@@ -59,9 +59,10 @@ export default function SignUp() {
         <button disabled={loading} className="bg-slate-700 text-white p-2 
         rounded-lg uppercase hover:opacity-95 
         disable:opacity-80 "> {loading ? 'Loading...' : 'Signup'} </button>
-        <OAuth/>
-      </form>
-      <div className="flex gap-2 mt-5">
+        <OAuth/> 
+        
+      </form>  
+            <div className="flex gap-2 mt-5">
         <p className="">Have an account</p>
         <Link to={"/signin"} >
          <span className="text-blue-700">Sign In</span> 

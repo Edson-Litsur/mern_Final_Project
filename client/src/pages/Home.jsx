@@ -46,28 +46,11 @@ export default function Home() {
     fetchOfferListings();
   }, []);
   return (
-    <div>
-      {/* top */}
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-        <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-          Find your next <span className='text-slate-500'>perfect</span>
-          <br />
-          place with ease
-        </h1>
-        <div className='text-gray-400 text-xs sm:text-sm'>
-          Sahand Estate is the best place to find your next perfect place to
-          live.
-          <br />
-          We have a wide range of properties for you to choose from.
-        </div>
-        <Link
-          to={'/search'}
-          className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
-        >
-          Let's get started...
-        </Link>
-      </div>
+    <div className="">   <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
+    
+    </div>
 
+ 
       {/* swiper */}
       <Swiper navigation>
         {offerListings &&
@@ -81,11 +64,34 @@ export default function Home() {
                 }}
                 className='h-[500px]'
                 key={listing._id}
-              ></div>
+              >
+                <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto text-center'>
+                    <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
+                      Find your next <span className='text-slate-500'>perfect</span>
+                      <br />
+                      place with ease
+                    </h1>
+                    <div className='text-gray-400 text-xs sm:text-sm'>
+                      Sahand Estate is the best place to find your next perfect place to
+                      live.
+                      <br />
+                      We have a wide range of properties for you to choose from.
+                    </div>
+               
+                <div className="flex items-center justify-center">  
+                  <Link to={'/search'}
+                      className="bg-blue-500 mt-28 w-48 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  "
+                  >
+                    Let's get started...
+                  </Link>
+                </div> 
+                </div> 
+              </div>
             </SwiperSlide>
           ))}
+         
       </Swiper>
-
+ 
       {/* listing results for offer, sale and rent */}
 
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>
