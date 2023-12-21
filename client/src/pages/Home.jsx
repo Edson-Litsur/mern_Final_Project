@@ -46,10 +46,7 @@ export default function Home() {
     fetchOfferListings();
   }, []);
   return (
-    <div className="">   <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-    
-    </div>
-
+    <div className="">  
  
       {/* swiper */}
       <Swiper navigation>
@@ -66,21 +63,14 @@ export default function Home() {
                 key={listing._id}
               >
                 <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto text-center'>
-                    <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-                      Find your next <span className='text-slate-500'>perfect</span>
+                    <h1 className='text-orange-500 font-bold text-3xl lg:text-6xl'>
+                      Find your next <span className='text-white-300'>perfect</span>
                       <br />
                       place with ease
                     </h1>
-                    <div className='text-gray-400 text-xs sm:text-sm'>
-                      Sahand Estate is the best place to find your next perfect place to
-                      live.
-                      <br />
-                      We have a wide range of properties for you to choose from.
-                    </div>
-               
                 <div className="flex items-center justify-center">  
                   <Link to={'/search'}
-                      className="bg-blue-500 mt-28 w-48 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  "
+                      className="bg-orange-600 mt-28 w-48 hover:bg-orange-300 text-white font-bold py-2 px-4 rounded-full  "
                   >
                     Let's get started...
                   </Link>

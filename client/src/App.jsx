@@ -13,9 +13,10 @@ import Search from './pages/Search';
 
 export default function App() {
   return (
-    <BrowserRouter>
-    <Header />
-      <Routes>
+    <div className=" ">  
+      <BrowserRouter >
+      <Header />
+      <Routes >
         <Route path="/" element={<Home />}  />
         <Route path="/signin" element={<SignIn />}  />
         <Route path="/signup" element={<SignUp />}  />
@@ -32,7 +33,8 @@ export default function App() {
           />
         </Route>
       </Routes>
-  </BrowserRouter>
+      </BrowserRouter>
+    </div>
 
 
   );

@@ -49,16 +49,16 @@ export default function SignIn() {
 
   // console.log(formData);
   return (
-    <div className='p-3 max-w-lg mx-auto'>
+    <div className='bg-gradient-to-r from-gray-100 to-orange-300 p-3 max-w-lg mx-auto mt-10'>
       <h1 className="text-3xl text-center font-semibold my-7">Sign In</h1>
       <form onSubmit={handleSubmit} action="" className='flex flex-col gap-4'>
         <input type="email" className="border p-2 rounded-lg" 
           placeholder='email' id='email' onChange={handleChange}/>
         <input type="password" className="border p-2 rounded-lg" 
           placeholder='password' id='password' onChange={handleChange}/>
-        <button disabled={loading} className="bg-slate-700 text-white p-2 
+        <button disabled={loading} className="bg-gradient-to-r from-gray-400 to-green-700  text-white p-2 
         rounded-lg uppercase hover:opacity-95 
-        disable:opacity-80 "> {loading ? 'Loading...' : 'Signup'} </button>
+        disable:opacity-80 "> {loading ? 'Loading...' : 'Sign in '} </button>
         <OAuth/>
       </form>
       <div className="flex gap-2 mt-5">
